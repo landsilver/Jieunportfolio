@@ -1,0 +1,597 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Libre Barcode 128 Text');
+@import url('https://fonts.googleapis.com/css?family=Jua|Muli|Inconsolata');
+@import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff');
+@import url(fontawesome-all.min.css);
+@import url(normalize.css);
+
+/*font*/
+
+body {
+ font-family: Righteous, sans-serif;
+ color: #333333;
+}
+
+/*next*/
+.next {
+ text-align: center;
+
+ position: fixed;
+ right: 200px;
+ top: 45%;
+}
+
+.next p {
+ font-family: Inconsolata;
+ font-size: 18px;
+ color: #888;
+ letter-spacing: 3px;
+ font-style: italic;
+
+ margin-bottom: 5px;
+}
+
+.next i {
+ color: #555
+}
+
+/*nav*/
+
+#gnb {
+ width: 800px;
+ /* margin: auto;*/
+ position: fixed;
+ bottom: 9%;
+ left: 50%;
+ /* margin-left: -700px;*/
+ margin-left: -330px;
+ z-index: 5
+}
+
+#gnb li {
+ position: relative;
+ float: left;
+ width: 150px;
+ margin-right: 42px;
+ box-sizing: content-box;
+}
+
+#gnb li:first-child {
+ width: 90px
+}
+
+#gnb li:nth-child(2) {
+ width: 100px;
+ margin-right: 50px
+}
+
+#gnb li:nth-child(3) {
+ width: 110px;
+ margin-right: 60px;
+}
+
+#gnb li:last-child {
+ width: 200px;
+ margin: 0;
+}
+
+#gnb li a {
+ display: block;
+ font-family: 'Libre Barcode 128 Text';
+ font-size: 50px;
+ /*
+ padding-left: 25px;
+ padding-right: 25px;
+*/
+ text-align: center;
+}
+
+#gnb li a:after {
+ display: block;
+ position: absolute;
+ content: '';
+ width: 0%;
+ height: 3px;
+ top: 75%;
+ left: 0;
+ background: #b7f4ed;
+ transition: all 0.4s
+}
+
+#gnb a:hover:after {
+ width: 100%;
+
+}
+
+#gnb li.on a:after {}
+
+
+/*contents*/
+
+#contents {}
+
+#contents section {
+ position: relative;
+ width: 100%;
+ height: 700px;
+
+ overflow: hidden;
+ margin: auto;
+
+ background: no-repeat fixed right center / cover;
+}
+
+/*a1*/
+#contents section .a1 {
+ width: 1200px;
+ margin: auto;
+}
+
+#contents section .a1 h1 {
+ font-family: Muli;
+ font-weight: bold;
+ font-size: 45px;
+ letter-spacing: 5px;
+ margin-top: -100px;
+}
+
+#contents section .a1 h5 {
+ font-family: Inconsolata;
+ font-size: 20px;
+ color: #555;
+ letter-spacing: 2px;
+
+ position: absolute;
+ top: 50px
+}
+
+#contents section .a1 p {
+ font-family: Inconsolata;
+ font-size: 20px;
+ color: #888;
+ letter-spacing: 2px;
+
+ position: absolute;
+ right: 20%;
+ top: 465px;
+
+ transform: rotate(-90deg)
+}
+
+#contents section .a1 strong {
+ font-weight: normal;
+ background: #b7f4ed;
+}
+
+#contents section .t1 {
+ position: absolute;
+ top: 350px;
+ padding-left: 170px
+}
+
+#contents section .t2 {
+ position: absolute;
+ top: 400px;
+ padding-left: 263px;
+}
+
+#contents section .s1 {
+ width: 400px;
+ height: 500px;
+ border: solid 5px #b7f4ed;
+
+ position: absolute;
+ left: 40%;
+ top: 10%
+}
+
+#contents section .s2 {
+ width: 40px;
+ height: 40px;
+ border: solid 2px #ddd;
+
+ position: absolute;
+ left: 52%;
+ top: 520px;
+ transform: rotate(45deg)
+}
+
+#contents section .s3 {
+ width: 30px;
+ height: 30px;
+ border: solid 2px #ddd;
+ border-radius: 100px;
+
+ position: absolute;
+ right: 26%;
+ top: 100px
+}
+
+#contents section .s4 {
+ width: 150px;
+ height: 5px;
+ border: solid 2px #ddd;
+ border-left-color: rgba(255, 255, 255, 0);
+ border-bottom-color: rgba(255, 255, 255, 0);
+ border-right-color: rgba(255, 255, 255, 0);
+
+ position: absolute;
+ right: 55%;
+ top: 20%
+}
+
+#contents section .a1 img {
+ padding-left: 55%;
+ padding-top: 200px;
+ z-index: -1
+}
+
+/*a2*/
+#contents section .a2 {
+ width: 1200px;
+ margin: auto;
+}
+
+#contents section .a2 h5 {
+ font-family: Inconsolata;
+ font-size: 20px;
+ color: #555;
+ letter-spacing: 2px;
+
+ position: absolute;
+ top: 50px
+}
+
+#contents section .a2 img {
+ width: 350px;
+ padding-left: 50px;
+ padding-top: 170px;
+}
+
+
+/*tabMenu*/
+/*wrap*/
+#wrap {
+ width: 100%;
+ height: 100%;
+ position: relative;
+
+}
+
+/*tab*/
+#tab {
+ width: 520px;
+ position: absolute;
+ left: 41%;
+ bottom: 5px
+}
+
+#tabMenu {
+ width: 100%;
+ height: 100%;
+ margin: auto
+}
+
+#tabMenu li {
+ float: left;
+ position: relative;
+ margin-right: 2px;
+
+ font-family: Inconsolata;
+ font-size: 17px;
+ color: #888;
+}
+
+#tabMenu li i {
+ padding-right: 5px
+}
+
+#tabMenu li a {
+ display: block;
+ padding: 10px 30px;
+
+ border-radius: 20px;
+ transition: all 0.2s
+}
+
+#tabMenu li a:hover,
+#tabMenu li a:focus,
+#tabMenu li.on a {
+ background: #b7f4ed;
+ color: #333
+}
+
+
+/*#tabCon*/
+#tabCon {
+ position: relative;
+ padding: 30px;
+ min-height: 280px;
+ font-family: "NanumSquareRound";
+ background: #fff;
+}
+
+#tabCon li {
+ margin-bottom: 20px;
+ padding-bottom: 10px;
+ overflow: hidden;
+}
+
+#tabCon li {
+ background: #fff;
+ position: absolute;
+ left: 15px;
+ top: 35px;
+
+ width: 95%;
+ margin-bottom: 0
+}
+
+#info {
+ margin-top: 15px;
+}
+
+#info p {
+ padding-bottom: 35px
+}
+
+#info td {
+ padding-bottom: 15px;
+}
+
+#info td:not(:first-child) {
+ padding-left: 15px
+}
+
+#edu {
+ margin: 80px 0 auto
+}
+
+#edu i {
+ color: #b7f4ed;
+ padding-right: 10px;
+}
+
+#skill {
+ margin: 40px 0 0 20px
+}
+
+#skill td {
+ padding-bottom: 15px;
+}
+#skill td:not(:first-of-type) {
+ padding-left: 35px
+}
+
+
+#skill i {
+ color: #b7f4ed;
+ margin: 0 2px;
+ font-size: 20px;
+}
+
+
+
+#tabCon li h3 {}
+
+#tabCon li p {
+ line-height: 20px;
+}
+
+#tabCon li p:not(:first-child) {
+ padding-top: 20px;
+}
+
+#tabCon li.on {
+ z-index: 1
+}
+
+/*a3*/
+#contents section .a3 {
+ width: 1200px;
+ margin: auto;
+}
+
+#contents section .a3 h5 {
+ font-family: Inconsolata;
+ font-size: 20px;
+ color: #555;
+ letter-spacing: 2px;
+
+ position: absolute;
+ top: 50px
+}
+
+
+/*banner*/
+#banner {
+ position: relative;
+ height: 450px;
+ width: 800px;
+
+ background: #dede;
+ overflow: hidden;
+ 
+ margin: 120px auto;
+}
+#banner .slide {
+ position: absolute;
+ width: 100%;
+ height: 100%
+}
+#banner .slide a {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ overflow: hidden;
+}
+#banner .slide a img {
+ position: absolute
+}
+
+
+#banner .btn {}
+#banner .btn a {
+ position: absolute;
+ left: 50%;
+ top: 50%;
+ margin-top: -36px;
+
+ width: 72px;
+ height: 72px;
+ overflow: hidden;
+}
+#banner .btn a:before {
+ content: url(../img/sprites.png);
+ display: block;
+ 
+ font-size: 0;
+ line-height: 0;
+ 
+ margin-top: -20px;
+}
+#banner .btn a:hover:before {
+ content: url(../img/sprites1.png);
+ display: block;
+}
+
+#banner .btn a.prev {
+ margin-left: -480px;
+}
+#banner .btn a.next {
+ margin-left: 410px;
+/* 버튼 크기(70px)만큼 빼줄 것*/
+}
+#banner .btn a.next:before {
+ margin-left: -80px;
+}
+
+#banner .btn a.on {
+ display: none;
+}
+
+
+#banner .indicator {
+ position: absolute;
+ bottom: 50px;
+ left: 0;
+ right: 0;
+ 
+ text-align: center;
+ height: 16px
+}
+#banner .indicator a {
+ display: inline-block;
+ 
+ width: 16px;
+ height: 16px;
+
+ overflow: hidden;
+}
+#banner .indicator a:before {
+ content: url(../img/sprites.png);
+ display: block;
+ font-size: 0;
+ line-height: 0;
+ margin-left: -110px;
+}
+#banner .indicator a.on {
+ cursor: default
+}
+#banner .indicator a.on:before {
+ margin-left: -130px;
+}
+
+
+/*a4*/
+#contents section .a4 {
+ width: 1200px;
+ margin: auto;
+}
+
+#contents section .a4 h5 {
+ font-family: Inconsolata;
+ font-size: 20px;
+ color: #555;
+ letter-spacing: 2px;
+
+ position: absolute;
+ top: 50px
+}
+
+#contents section .card {
+ width: 100%;
+ margin-top: 240px;
+ margin-left: 35%;
+ 
+ position: relative
+ 
+}
+#contents section .card img {
+ height: 350px;
+ z-index: 100;
+}
+#contents section .letter {
+ width: 145px;
+ height: 100px;
+ 
+ background: #222;
+ 
+ position: absolute;
+ top: 50px;
+ left: 100px;
+ 
+ overflow: hidden;
+ z-index: -100px;
+ 
+ opacity: 0.4;
+ transition: 1s
+}
+#contents section .letter p {
+ line-height: 30px;
+ text-align: center;
+ 
+ color: #fff;
+ font-family: "NanumSquareRound";
+ font-weight: lighter;
+ margin-top: 50px;
+}
+
+#contents section .letter:hover {
+ height: 250px;
+ top: -100px;
+ 
+ opacity: 0.8;
+}
+#contents section .character {
+ opacity: 0;
+ transition: 2s
+}
+#contents section .character:hover {
+ opacity: 1
+}
+
+/*fin*/
+.fin {
+ text-align: center;
+ width: 50px;
+ height: 50px;
+ line-height: 50px;
+
+ position: absolute;
+ right: 200px;
+ top: 45%;
+ background: #fff;
+}
+
+.fin p {
+ font-family: Inconsolata;
+ font-size: 18px;
+ color: #888;
+ letter-spacing: 3px;
+ font-style: italic;
+
+ margin-bottom: 5px;
+}
+
+
